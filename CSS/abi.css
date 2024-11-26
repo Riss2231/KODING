@@ -52,4 +52,5 @@ body {
 audio {
     width: 100%; /* Kontrol audio mengikuti lebar container */
     margin-top: 20px;
+    display: none;
 }

@@ -154,4 +154,6 @@ header nav ul li:hover ul {
   audio {
     width: 100%; /* Kontrol audio mengikuti lebar container */
     margin-top: 20px;
+    overflow: hidden;
+    display: none;
 }
