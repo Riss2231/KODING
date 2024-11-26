@@ -184,3 +184,115 @@ body {
         text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff;
     }
   }
+
+  /* CSS Responsif */
+
+/* Untuk layar kecil (ponsel) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  header .header {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  header nav ul li ul {
+    position: static;
+    box-shadow: none;
+  }
+
+  .header-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .slider-container {
+    width: 90%; /* Lebar slider lebih kecil */
+    height: auto; /* Biarkan tinggi menyesuaikan */
+    border: 2px solid #007bff;
+  }
+
+  .slide img {
+    object-fit: contain; /* Menyesuaikan gambar di layar kecil */
+  }
+
+  .prev,
+  .next {
+    font-size: 18px;
+    padding: 5px;
+  }
+}
+
+/* Untuk layar sedang (tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .header-title {
+    font-size: 32px;
+    margin: 15px 0;
+  }
+
+  .slider-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .prev,
+  .next {
+    font-size: 20px;
+    padding: 8px;
+  }
+}
+
+/* Untuk layar ekstra kecil (ponsel sangat kecil) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+    text-align: center;
+  }
+
+  header .header {
+    font-size: 18px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  header nav ul li a {
+    padding: 8px;
+    text-align: left;
+  }
+
+  .header-title {
+    font-size: 24px;
+  }
+
+  .slider-container {
+    width: 95%;
+    height: auto;
+  }
+
+  .prev,
+  .next {
+    font-size: 16px;
+    padding: 4px;
+  }
+}
