@@ -152,7 +152,6 @@ header nav ul li:hover ul {
     border-radius: 10px;
   }
   audio {
-    width: 100%; /* Kontrol audio mengikuti lebar container */
     margin-top: 20px;
     overflow: hidden;
     display: none;
