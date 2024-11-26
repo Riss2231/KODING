@@ -151,30 +151,6 @@ header nav ul li:hover ul {
     object-fit: cover;
     border-radius: 10px;
   }
-  
-  button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
   audio {
     width: 100%; /* Kontrol audio mengikuti lebar container */
     margin-top: 20px;
