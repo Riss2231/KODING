@@ -1,0 +1,178 @@
+body {
+    list-style: none;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(background.png);
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100vh;
+  }
+  header nav ul {
+    list-style: none; /* Hilangkan bullet points */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100px;
+    display: flex; /* Buat menu horizontal */
+    gap: 20px; /* Jarak antar item menu */
+}
+
+header nav ul li {
+    position: relative; /* Dibutuhkan untuk dropdown */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Warna teks */
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block; /* Pastikan klik area mencakup seluruh elemen */
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #575757; /* Warna latar saat hover */
+}
+
+/* Dropdown Menu Styles */
+header nav ul li ul {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute; /* Tempatkan dropdown di bawah menu induk */
+    top: 100%; /* Tepat di bawah elemen induk */
+    left: 0;
+    background-color: #444; /* Warna latar dropdown */
+    padding: 10px 0;
+    min-width: 150px; /* Lebar minimum dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    z-index: 1000; /* Supaya dropdown muncul di atas elemen lain */
+}
+
+header nav ul li ul li {
+    padding: 0;
+}
+
+header nav ul li ul li a {
+    padding: 10px 15px; /* Jarak dalam menu dropdown */
+}
+
+header nav ul li:hover ul {
+    display: block; /* Tampilkan dropdown saat menu induk dihover */
+}
+
+/* Responsive Design (Optional) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Susunan menu menjadi vertikal */
+    }
+
+    header nav ul li ul {
+        position: static; /* Dropdown tetap sejajar di bawah */
+    }
+}
+  /* Judul di atas Slider */
+  .header-container {
+    width: 100%;
+    text-align: center; /* Rata tengah */
+    position: absolute; /* Memastikan judul berada di atas slider */
+    top: 200px; /* Jarak dari atas */
+  }
+  
+  .header-title {
+    display: inline-block;
+    font-size: 2.5em; /* Ukuran font */
+    color: #333;
+    background-color: #575757;
+    margin: 0;
+    padding: 10px;
+    color: white;
+  }
+  
+  main {
+    padding: 20%;   
+  }
+  
+  header nav ul li {
+    margin-left: 20px; /* Jarak antar item navigasi */
+  }
+  main section {
+    margin-bottom: 20px;
+  }
+  
+  main section h2 {
+    color: #333;
+  }
+  header nav ul li a {
+    color: rgb(219, 218, 218);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Efek hover */
+  }
+  
+  header nav ul li a:hover {
+    background-color: #575757; /* Warna saat hover */
+  }
+  .slider-container {
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    border: 3px solid #007bff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
