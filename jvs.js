@@ -1,29 +1,19 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll(".slide");
+let currentIndex = 0; // Indeks slide saat ini
+const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
 
-// Fungsi untuk menampilkan slide
-function showSlide(index) {
-  // Pastikan index berada dalam rentang yang valid
-  if (index >= totalSlides) {
-    currentSlide = 0; // Kembali ke slide pertama
-  } else if (index < 0) {
-    currentSlide = totalSlides - 1; // Kembali ke slide terakhir
+function showNextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides; // Perulangan ke slide pertama jika akhir tercapai
+    document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+// Pindah slide setiap 3 detik
+setInterval(showNextSlide, 3000);
+
+document.getElementById("backButton").addEventListener("click", function () {
+  if (document.referrer) { // Cek apakah ada halaman sebelumnya
+      window.location.href = document.referrer; // Arahkan ke halaman sebelumnya
   } else {
-    currentSlide = index;
+      window.location.href = "index.html"; // Jika tidak ada, kembali ke halaman utama
   }
-
-  // Geser slider ke posisi yang sesuai
-  const slider = document.querySelector(".slider");
-  slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
-
-// Fungsi untuk slide berikutnya
-function nextSlide() {
-  showSlide(currentSlide + 1);
-}
-
-// Fungsi untuk slide sebelumnya
-function prevSlide() {
-  showSlide(currentSlide - 1);
-}
+});
