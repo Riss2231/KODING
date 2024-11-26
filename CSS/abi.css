@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Foto akan menyesuaikan layar */
+    gap: 20px; /* Jarak antar foto */
+}
+
+.photo {
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px); /* Ukuran responsif */
+    max-width: 300px;
+    margin: 10px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+audio {
+    width: 100%; /* Kontrol audio mengikuti lebar container */
+    margin-top: 20px;
+}
