@@ -5,7 +5,3 @@ onload = () => {
       clearTimeout(c);
     }, 1000);
   };
-
-  const message = document.getElementById("message");
-
-let isVisible = false;
