@@ -14,7 +14,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 20vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -333,7 +333,7 @@ body {
   --size: 6vmin;
   transform: rotate(-20deg);
   animation: growing-grass-ans--1 2s 2.6s backwards;
-}
+} 
 @keyframes growing-grass-ans--1 {
   0% {
     transform-origin: center left;
@@ -983,4 +983,9 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 .not-loaded * {
   animation-play-state: paused !important;
+}
+@media (max-width:768px){
+    .flower {
+        animation: growing-grass-ans--6 2s 1.6s linear backwards;
+    }
 }
