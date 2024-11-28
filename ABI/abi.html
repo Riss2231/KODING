@@ -25,22 +25,26 @@
         <!-- Galeri Foto -->
         <div class="gallery">
             <div class="photo">
-                <img src="foto1.jpg" alt="Foto 1">
+                <img src="abi1.jpeg" alt="Foto 1">
                 <p>Deskripsi Foto 1</p>
             </div>
             <div class="photo">
-                <img src="foto2.jpg" alt="Foto 2">
+                <img src="abi2.jpeg" alt="Foto 2">
                 <p>Deskripsi Foto 2</p>
             </div>
             <div class="photo">
-                <img src="foto3.jpg" alt="Foto 3">
+                <img src="abi3.jpeg" alt="Foto 3">
                 <p>Deskripsi Foto 3</p>
             </div>
         </div>
         <button onclick="goBack()">Kembali</button>
+        <button onclick="goToNextPage()">Pesan</button>
         <script>
             function goBack() {
                 window.history.back();
+            }
+            function goToNextPage() {
+                window.location.href = 'abi2.html'
             }
         </script>
         <audio controls autoplay loop>
