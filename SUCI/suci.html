@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri 3 Foto</title>
+    <style>
+body {
+    margin: 0;
+    height: 100dvh;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    background-size: cover;
+  }
+    </style>
+    <link rel="stylesheet" href="../CSS/abi.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <div class="title">
+            <h1>SERLY OKTIANI</h1>
+        </div>
+        
+        <!-- Galeri Foto -->
+        <div class="gallery">
+            <div class="photo">
+                <img src="../SERLY/serly3.jpeg" alt="Foto 1">
+                <p>Deskripsi Foto 1</p>
+            </div>
+            <div class="photo">
+                <img src="../SERLY/serly1.jpeg" alt="Foto 2">
+                <p>Deskripsi Foto 2</p>
+            </div>
+            <div class="photo">
+                <img src="../SERLY/serly2.jpeg" alt="Foto 3">
+                <p>Deskripsi Foto 3</p>
+            </div>
+        </div>
+    </div>
+    <button onclick="goBack()">Kembali</button>
+    <button onclick="goToNextPage()">Pesan</button>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function goToNextPage() {
+            window.location.href = 'nopal2.html'
+        }
+    </script>
+            <audio controls autoplay loop>
+                <source src="../SERLY/MUSIK.mp3" type="audio/mpeg">
+            </audio>
+</body>
+</html>
