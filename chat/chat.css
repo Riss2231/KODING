@@ -70,5 +70,7 @@ h1 {
 }
 
 audio {
+  margin-top: 20px;
+  overflow: hidden;
   display: none;
 }
